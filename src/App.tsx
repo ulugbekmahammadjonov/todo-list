@@ -1,4 +1,8 @@
 import {BrowserRouter, Routes, Route} from "react-router-dom";
+import {Todos} from "./pages/Todos";
+import {Login} from "./pages/Login";
+import {SignUp} from "./pages/SignUp";
+import Error from "./pages/Error";
 import './App.css';
 
 function App() {
@@ -9,7 +13,7 @@ function App() {
           <Route path={"/"} element={<Todos/>}/>
           <Route path={"/login"} element={<Login/>}/>
           <Route path={"/signup"} element={<SignUp/>}/>
-          <Route path={"*"} element={<NotFound/>}/>
+          <Route path={"*"} element={<Error/>}/>
         </Routes>
       </BrowserRouter>
     </div>
