@@ -16,6 +16,7 @@ function App() {
           <Route path={"*"} element={<Error/>}/>
         </Routes>
       </BrowserRouter>
+      <h1>Created by Ulugbek Mahammadjonov</h1>
     </div>
   );
 }
